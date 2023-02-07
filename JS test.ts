@@ -66,5 +66,10 @@ const getStudentArray = () => {
     }, [])
 }
 // console.log(getStudentArray(users))
-const res = Math.sqrt(4)
-console.log(res);
+
+function sumTo(n: number) { 
+    return n === 1 ? n : n + n - 1
+}
+
+console.log(sumTo(10));
+

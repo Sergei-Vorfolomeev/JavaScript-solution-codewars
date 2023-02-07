@@ -51,3 +51,29 @@ function _if(bool, func1, func2) {
     bool ? func1() : func2()
 }
 //-----------------------------------------------------------------------------------------------
+// Write a function sumTo(n) that calculates the sum of numbers 1 + 2 + ... + n.
+//
+//     For instance:
+//
+// sumTo(1) = 1
+// sumTo(2) = 2 + 1 = 3
+// sumTo(3) = 3 + 2 + 1 = 6
+// sumTo(4) = 4 + 3 + 2 + 1 = 10
+// ...
+// sumTo(100) = 100 + 99 + ... + 2 + 1 = 5050
+
+function sumTo(n) {
+    if (n === 1) {
+        return n
+    } else {
+        return n + sumTo(n - 1)
+    }
+}
+
+function sumTo2 (n) {
+    let res = 0
+    for (let i = 0; i < n; n--) {
+        res = res + n
+    }
+    return res
+}
